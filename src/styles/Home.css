@@ -1,0 +1,19 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+}
